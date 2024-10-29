@@ -83,5 +83,5 @@ scale = Vector2( 0.091506, 0.0968624 )
 texture = ExtResource( 4 )
 
 [connection signal="pressed" from="WebButton" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="DiscordButton" to="." method="_on_DiscordButton_pressed"]
 [connection signal="pressed" from="DiscordButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="DiscordButton" to="." method="_on_DiscordButton_pressed"]
