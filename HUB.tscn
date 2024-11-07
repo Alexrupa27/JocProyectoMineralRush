@@ -79,6 +79,7 @@ custom_fonts/font = SubResource( 2 )
 text = "OPTIONS"
 
 [connection signal="pressed" from="WebButton" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="WebButton" to="." method="_on_WebButton_pressed"]
-[connection signal="pressed" from="DiscordButton" to="." method="_on_Button_pressed"]
+
+
 [connection signal="pressed" from="DiscordButton" to="." method="_on_DiscordButton_pressed"]
+[connection signal="pressed" from="DiscordButton" to="." method="_on_Button_pressed"]
