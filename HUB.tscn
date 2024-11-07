@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://media/hudImg/image.png" type="Texture" id=1]
 [ext_resource path="res://media/fonts/Pixeled.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://HUB.gd" type="Script" id=3]
 [ext_resource path="res://media/hudImg/discordlogo.png" type="Texture" id=4]
+[ext_resource path="res://MUNDO.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://fonts/Pixeled.ttf"
@@ -20,6 +21,8 @@ font_data = ExtResource( 2 )
 
 [node name="HUB" type="CanvasLayer"]
 script = ExtResource( 3 )
+
+[node name="MUNDO" parent="." instance=ExtResource( 5 )]
 
 [node name="NomLabel" type="Label" parent="."]
 anchor_right = 1.0
@@ -57,25 +60,25 @@ scale = Vector2( 0.091506, 0.0968624 )
 texture = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 398.0
-margin_top = 182.0
-margin_right = 714.0
-margin_bottom = 476.0
+margin_left = 268.0
+margin_top = 174.0
+margin_right = 502.0
+margin_bottom = 348.0
 
 [node name="StartGameButton" type="Button" parent="VBoxContainer"]
-margin_right = 316.0
+margin_right = 234.0
 margin_bottom = 52.0
 custom_fonts/font = SubResource( 1 )
 text = "START GAME"
 
 [node name="ConfigButton" type="Button" parent="VBoxContainer"]
 margin_top = 56.0
-margin_right = 316.0
+margin_right = 234.0
 margin_bottom = 108.0
 custom_fonts/font = SubResource( 2 )
 text = "OPTIONS"
 
-[connection signal="pressed" from="WebButton" to="." method="_on_WebButton_pressed"]
 [connection signal="pressed" from="WebButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="WebButton" to="." method="_on_WebButton_pressed"]
 [connection signal="pressed" from="DiscordButton" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="DiscordButton" to="." method="_on_DiscordButton_pressed"]
