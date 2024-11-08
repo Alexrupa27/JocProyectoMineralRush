@@ -1,5 +1,10 @@
 extends CanvasLayer
 
+onready var config_button = $VBoxContainer/ConfigButton as Button
+onready var start_game_button = $VBoxContainer/StartGameButton as Button
+
+
+
 var urlWeb = "https://educem.com"
 var urlDiscord = "https://discord.gg/4U57ehVFQz"
 
