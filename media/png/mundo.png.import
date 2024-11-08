@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mundo.png-99c38b57f89e3ced37f6b135d5c43ff1.stex"
+path="res://.import/mundo.png-05af4348dc9e95ea8f83623c6c7516bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mundo.png"
-dest_files=[ "res://.import/mundo.png-99c38b57f89e3ced37f6b135d5c43ff1.stex" ]
+source_file="res://media/png/mundo.png"
+dest_files=[ "res://.import/mundo.png-05af4348dc9e95ea8f83623c6c7516bf.stex" ]
 
 [params]
 
